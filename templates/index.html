@@ -1,0 +1,18 @@
+<!DOCTYPE html lang="en-US">
+<html>
+  {% include 'head.html' %}
+  <body>
+    <h1>Welcome to the Full-Stack Python Template!</h1>
+    <!-- <input
+      type="checkbox"
+      name="swap"
+      hx-post="/swap-docs"
+      hx-target=".docs"
+      hx-trigger="change"
+    /> -->
+    {% with documentation='Swagger UI', link='docs' %}
+    <div class="docs">{% include 'docs-button.html' %}</div>
+    {% endwith %}
+    <p>Hello World!</p>
+  </body>
+</html>
